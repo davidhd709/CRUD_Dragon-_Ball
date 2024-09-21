@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Dragon Ball</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Dragon Ball</h1>
+        
+        <form id="characterForm">
+            <input type="text" id="characterName" placeholder="Nombre del personaje" required>
+            <input type="text" id="characterRace" placeholder="Raza del personaje" required>
+            <input type="text" id="characterGender" placeholder="Género del personaje" required>
+            <input type="text" id="characterKi" placeholder="Ki del personaje" required>
+            <button type="submit">Agregar personaje</button>
+        </form>
+
+        <div id="characterList">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Raza</th>
+                        <th>Género</th>
+                        <th>Ki</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="characterTableBody">
+                    <!-- Los personajes se insertarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Personaje - Dragon Ball CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Personaje</h1>
+        
+        <form id="editForm">
+            <input type="hidden" id="characterId">
+            <label for="editName">Nombre:</label>
+            <input type="text" id="editName" required>
+            
+            <label for="editRace">Raza:</label>
+            <input type="text" id="editRace" required>
+            
+            <label for="editGender">Género:</label>
+            <input type="text" id="editGender" required>
+            
+            <label for="editKi">Ki:</label>
+            <input type="text" id="editKi" required>
+            
+            <button type="submit">Guardar cambios</button>
+        </form>
+        
+        <a href="index.html" class="button">Volver</a>
+    </div>
+
+    <script src="edit.js"></script>
+</body>
+</html>
